@@ -1,0 +1,9 @@
+{
+  "extends": "@lightit/tsconfig/base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "types": ["vitest/globals"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"]
+}

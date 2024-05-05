@@ -1,0 +1,56 @@
+{
+  "name": "@lightit/storybook",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "pnpm with-env storybook build",
+    "clean": "git clean -xdf dist .turbo node_modules",
+    "dev": "pnpm with-env storybook dev -p 6006",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "format": "prettier --check \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path ../../.gitignore",
+    "type-check": "tsc --noEmit",
+    "with-env": "dotenv -e ./.env --"
+  },
+  "dependencies": {
+    "@lightit/shared": "*",
+    "@lightit/ui": "*",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@lightit/eslint-config": "^0.2.0",
+    "@lightit/prettier-config": "^0.1.0",
+    "@lightit/tailwind-config": "^0.1.0",
+    "@lightit/tsconfig": "^0.1.0",
+    "@storybook/addon-actions": "^7.4.0",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-styling": "^1.0.0",
+    "@storybook/cli": "^7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@storybook/react-vite": "^7.4.0",
+    "@storybook/testing-library": "^0.1.0",
+    "@types/lodash": "^4.14.198",
+    "@types/node": "^18.17.14",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "storybook": "^7.4.0",
+    "tailwindcss": "3.3.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@lightit/eslint-config/base",
+      "@lightit/eslint-config/react"
+    ]
+  },
+  "prettier": "@lightit/prettier-config"
+}
