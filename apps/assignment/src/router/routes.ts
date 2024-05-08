@@ -29,6 +29,7 @@ export const ROUTES = {
   },
   platformRoles: "/platform-roles",
   login: "/login",
+  terms: "/terns-and-conditions",
 } as const;
 
 export const MODAL_ROUTES = {
