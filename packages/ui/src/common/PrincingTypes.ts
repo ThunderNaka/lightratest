@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 export interface IPricing extends React.PropsWithChildren<{}> {
   children: React.ReactElement | React.ReactElement[];

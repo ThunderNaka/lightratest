@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface IIconWrapper {
   size: IconSize;
   desktop?: IconSize;
