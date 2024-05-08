@@ -56,6 +56,12 @@ export const ExpandedSidebar = ({
           </ul>
         </Accordion.Root>
       </ScrollArea>
+
+      <div className="w-full p-4 text-right hover:opacity-10">
+        <Link to={ROUTES.terms} tabIndex={-1}>
+          Terms & Conditions
+        </Link>
+      </div>
     </div>
   );
 };
