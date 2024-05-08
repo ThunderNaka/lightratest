@@ -2,7 +2,7 @@ import type { FC } from "react";
 import type { UseFormReturn } from "react-hook-form";
 import { z } from "zod";
 
-import { Button,  icons, Input } from "@lightit/ui";
+import { Button, icons, Input } from "@lightit/ui";
 
 import type { ClientWithProjects } from "~/api/clients";
 import { ModalHeader } from "~/components";
@@ -31,7 +31,6 @@ export const ClientForm: FC<ClientFormProps> = ({
   hookForm,
   onSubmit,
 }) => {
-
   const {
     formState: { errors },
     register,
@@ -91,7 +90,7 @@ export const ClientForm: FC<ClientFormProps> = ({
             }
             {...register("address")}
             error={errors.address?.message}
-          />}
+          />
         </div>
       </div>
 
