@@ -14,7 +14,7 @@ const Pricing = ({ children }: IPricing) => {
   return <div className=" flex flex-col items-end text-right ">{children}</div>;
 };
 
-Pricing.Discount = ({
+const PricingDiscount = ({
   totalBeforeDiscount,
   percentageToApply,
 }: IPricingDiscount) => {
@@ -29,21 +29,21 @@ Pricing.Discount = ({
     </div>
   );
 };
-Pricing.Total = ({ totalAmount }: IPricingTotal) => {
+const PricingTotal = ({ totalAmount }: IPricingTotal) => {
   return (
     <Paragraph size="medium" fontWeight="semibold">
       {totalAmount}
     </Paragraph>
   );
 };
-Pricing.TotalWithTaxes = ({ totalAmount }: IPricingTotal) => {
+const PricingTotalWithTaxes = ({ totalAmount }: IPricingTotal) => {
   return (
     <Paragraph size="xxsmall" fontWeight="semibold">
       {`Total ${totalAmount}`}
     </Paragraph>
   );
 };
-Pricing.TaxesAndFees = () => {
+const PricingTaxesAndFees = () => {
   return (
     <div className="flex items-center gap-1">
       <Paragraph size="xxsmall" textColor="text-primary-300">
@@ -59,4 +59,10 @@ Pricing.TaxesAndFees = () => {
   );
 };
 
-export default Pricing;
+export {
+  Pricing,
+  PricingDiscount,
+  PricingTotal,
+  PricingTotalWithTaxes,
+  PricingTaxesAndFees,
+};
