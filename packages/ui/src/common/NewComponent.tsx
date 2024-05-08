@@ -3,7 +3,11 @@ import { QuestionMarkCircleIcon } from "@heroicons/react/20/solid";
 
 import { IconWrapper } from "./Icons";
 import Paragraph from "./Paragraph";
-import { IPricing, IPricingDiscount, IPricingTotal } from "./PrincingTypes";
+import type {
+  IPricing,
+  IPricingDiscount,
+  IPricingTotal,
+} from "./PrincingTypes";
 import { Tooltip } from "./Tooltip";
 
 const Pricing = ({ children }: IPricing) => {
