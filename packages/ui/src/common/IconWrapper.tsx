@@ -1,6 +1,6 @@
 import React from "react";
 
-import { IconSize, IIconWrapper } from "./IconWrapperTypes";
+import type { IconSize, IIconWrapper } from "./IconWrapperTypes";
 
 const IconWrapper = ({
   size,

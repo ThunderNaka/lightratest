@@ -1,6 +1,6 @@
 import React from "react";
 
-import { paragraphClasses, ParagraphProps } from "./typography-types";
+import { paragraphClasses, type ParagraphProps } from "./typography-types";
 
 const Paragraph = ({
   fontWeight = "normal",
