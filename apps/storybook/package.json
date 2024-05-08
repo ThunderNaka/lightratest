@@ -15,6 +15,7 @@
   "dependencies": {
     "@lightit/shared": "*",
     "@lightit/ui": "*",
+    "@storybook/icons": "^1.2.9",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -24,6 +25,7 @@
     "@lightit/prettier-config": "^0.1.0",
     "@lightit/tailwind-config": "^0.1.0",
     "@lightit/tsconfig": "^0.1.0",
+    "@storybook/addon-a11y": "^7.4.0",
     "@storybook/addon-actions": "^7.4.0",
     "@storybook/addon-essentials": "^7.4.0",
     "@storybook/addon-interactions": "^7.4.0",
