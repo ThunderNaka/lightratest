@@ -11,6 +11,7 @@ import {
   HookedSelect,
   icons,
   IconWrapper,
+  Input,
   Popover,
   ScrollArea,
 } from "@lightit/ui";
@@ -154,6 +155,21 @@ export const Filters = ({ defaultValues, onFilterApply }: FiltersProps) => {
                   <icons.XMarkIcon
                     className="h-5 w-5 cursor-pointer text-primary-300 hover:text-complementary-red-600"
                     onClick={() => setValue("project", [])}
+                  />
+                </IconWrapper>
+              </div>
+              <div className="flex items-end gap-3">
+                <Input
+                  id="available-hours"
+                  containerClassName="w-full"
+                  label="Available Hours"
+                  placeholder="Select a project"
+                  onChange={() => setValue("project", [])}
+                />
+                <IconWrapper className="pb-9">
+                  <icons.XMarkIcon
+                    className="h-5 w-5 cursor-pointer text-primary-300 hover:text-complementary-red-600"
+                    onClick={() => setValue("project", [2, 3])}
                   />
                 </IconWrapper>
               </div>
