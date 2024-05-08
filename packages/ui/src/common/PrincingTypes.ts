@@ -1,7 +1,7 @@
-import * as React from "react";
+import type { PropsWithChildren, ReactElement } from "react";
 
-export interface IPricing extends React.PropsWithChildren<{}> {
-  children: React.ReactElement | React.ReactElement[];
+export interface IPricing extends PropsWithChildren<unknown> {
+  children: ReactElement | ReactElement[];
 }
 
 export interface IPricingDiscount {
